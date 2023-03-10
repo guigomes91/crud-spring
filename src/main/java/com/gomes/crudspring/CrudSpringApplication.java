@@ -22,11 +22,13 @@ public class CrudSpringApplication {
 			Course c = new Course();
 			c.setName("Angular");
 			c.setCategory("Front-end");
+			c.setStatus("Ativo");
 			repository.save(c);
 
 			c = new Course();
 			c.setName("Spring");
 			c.setCategory("Back-end");
+			c.setStatus("Ativo");
 			repository.save(c);
 		};
 	}
